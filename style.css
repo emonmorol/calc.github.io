@@ -1,0 +1,37 @@
+.container{
+    width: 278px;
+    margin-top: 100px;
+}
+.output-space{
+    height: 85px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+}
+#initial-output{
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 22px;
+}
+.input-space{
+    background-color: rgb(236, 245, 247);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.btn{
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 2px 3px 6px rgba(78, 78, 82, 0.644);
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.equal{
+    background-color: white;
+    color: white;
+}
