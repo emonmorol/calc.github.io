@@ -9,9 +9,6 @@ function addNumbers(inputMan){
     console.log(outputText)
     const outputShow = outputText.innerText;
     outputText.innerText = outputShow + inputMan;
-    if(inputMan=='equal'){
-        return outputText.innerText;
-    }
 }
 
 document.getElementById('one').addEventListener('click',function(){
@@ -67,20 +64,22 @@ document.getElementById('division').addEventListener('click',function(){
     addNumbers(inputdivision);
 })
 document.getElementById('equal').addEventListener('click',function(){
-    const answer = eval(addNumbers());
+    let answerText = document.getElementById('initial-output').innerText;
+    let answer = eval(answerText);
+    document.getElementById('initial-output').innerText = answer;
 })
 document.getElementById('plus').addEventListener('click',function(){
     const inputplus = getNumber('plus');
     addNumbers(inputplus);
 })
-document.getElementById('remain').addEventListener('click',function(){
-    const inputremain = getNumber('remain');
-    addNumbers(inputremain);
-})
 document.getElementById('ac').addEventListener('click',function(){
-    const inputac = getNumber('ac');
+    document.getElementById('initial-output').innerText = '';
 })
 document.getElementById('multiply').addEventListener('click',function(){
     const inputmultiply = getNumber('multiply');
     addNumbers(inputmultiply);
+})
+document.getElementById('remain').addEventListener('click',function(){
+    const inputremain = getNumber('remain');
+    addNumbers(inputremain);  
 })
